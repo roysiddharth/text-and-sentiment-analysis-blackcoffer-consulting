@@ -41,7 +41,7 @@ analytical processing (OLAP). Data extraction is the first step in a data ingest
 ETL — extract, transform, and load.
 In the given assignment, we have used `BeauitfulSoup4`, a very flexible web scraping library in
 Python, to get the text data from the given data of URL objects in the *“Input.xlsx”* file.
-We have also used the requests library to get access to the HTML of the URLs given.
+We have also used the `requests` library to get access to the HTML of the URLs given.
 Finally, we have stored the obtained textual data in a pandas DataFrame and written that
 DataFrame to a .csv (comma separated value) file, which we have used as our data set for the
 textual analysis.
