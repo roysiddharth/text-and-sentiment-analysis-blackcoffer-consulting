@@ -119,7 +119,7 @@ textstatistics library in Python. We have counted the number of syllables in the
 
 
 #### Average Sentence Length
-![avg_sentence_len](https://bit.ly/3EpDGc8)
+![average sentence length](https://bit.ly/37WDNPU)
 
 ### Word Count
 Word count in a body of text can be found by:
