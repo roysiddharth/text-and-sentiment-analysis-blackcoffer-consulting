@@ -124,21 +124,21 @@ textstatistics library in Python. We have counted the number of syllables in the
 
 **Average Sentence Length = the number of words / the number of sentences**
 
-### Word Count
+## Word Count
 Word count in a body of text can be found by:
 - removing stop words such as “a”, “the”, “is”, “are” etc using nltk.corpus.stopwords
 - removing punctuations from the words using the string.punctuations module.
 Then, we have tokenized the words into tokens and found out the length of the obtained list of
 tokens.
 
-### Average Number of Words per Sentence
+## Average Number of Words per Sentence
 We have used `nltk.sent_tokenize` to tokenize sentences and `nltk.word_tokenize` to tokenize
 words. Now, average number of words per sentence can be found out using the formula:
 
 **Average Number of Words Per Sentence = the total number of words / the total number of
 sentences.**
 
-### Syllable Count per Word
+## Syllable Count per Word
 We count the number of Syllables in each word of the text by counting the vowels present in
 each word. We also handle some exceptions like words ending with "es","ed" by not counting
 them as a syllable.
@@ -146,7 +146,7 @@ Syllables can be counted using the `textstatistics.syllable_count()` function. W
 `.apply()` and `lambda` function to find out the number of syllables in each other in a body of text
 and store the information in a separate df column.
 
-### Personal Pronouns
+## Personal Pronouns
 To calculate Personal Pronouns mentioned in the text, we use regular expressions to find the
 counts of the words - “I”, “we”, “my”, “ours”, and “us”. Special care is taken so that the country
 name US is not included in the list.
@@ -164,7 +164,7 @@ def personal_pro(text):
 `(?-i:us)` is used as an in-line modifier group where the matching is case-sensitive. As a
 result, this matches only us and not US (the country).
 
-### Average Word Length
+## Average Word Length
 Average word length can be found by the following formula:
 
 **(Sum of the total number of characters in each word) / (Total number of words)**
