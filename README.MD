@@ -90,14 +90,16 @@ Sentiment polarity for an element defines the orientation of the expressed senti
 determines if the text expresses the positive, negative or neutral sentiment of the user about the
 entity in consideration. It is a float variable between -1 and 1.
 
-![polarity](https://bit.ly/3OklQeO)
+**Polarity Score = (Positive Score – Negative Score)/ ((Positive Score + Negative Score) +
+0.000001)**
 
 ### Subjectivity Score
 Subjective sentences generally refer to personal opinion, emotion or judgment whereas
 objective refers to factual information. Subjectivity is also a float which lies in the range of 0 and
 1.
 
-![subjectivity](https://bit.ly/3KTuDm7)
+**Subjectivity Score = (Positive Score + Negative Score)/ ((Total Words after cleaning) +
+0.000001)**
 
 ### Analysis of Readability Index
 Analysis of Readability Index is defined using the *Gunning Fog Index*.
@@ -109,7 +111,7 @@ States high school senior (around 18 years old). Ideal Gunning Fog Index of any 
 assumed to be around 7 to 8. Anything above 12 is perceived to be too complicated to read for
 an average reader.
 
-![fog_index](https://bit.ly/3uNniyS)
+**Fog Index = 0.4 * (Average Sentence Length + Percentage of Complex words)**
 
 #### Complex Words
 Complex words are words in a text that contain more than two syllables. For the purpose of
@@ -119,7 +121,8 @@ textstatistics library in Python. We have counted the number of syllables in the
 
 
 #### Average Sentence Length
-![average sentence length](https://bit.ly/37WDNPU)
+
+**Average Sentence Length = the number of words / the number of sentences**
 
 ### Word Count
 Word count in a body of text can be found by:
@@ -132,7 +135,8 @@ tokens.
 We have used `nltk.sent_tokenize` to tokenize sentences and `nltk.word_tokenize` to tokenize
 words. Now, average number of words per sentence can be found out using the formula:
 
-![avg_words_per_sentence](https://bit.ly/3uPT5iy)
+**Average Number of Words Per Sentence = the total number of words / the total number of
+sentences.**
 
 ### Syllable Count per Word
 We count the number of Syllables in each word of the text by counting the vowels present in
@@ -163,7 +167,7 @@ result, this matches only us and not US (the country).
 ### Average Word Length
 Average word length can be found by the following formula:
 
-![avg_word_len](https://bit.ly/3rx0fWX)
+**(Sum of the total number of characters in each word) / (Total number of words)**
 
 We have therefore defined a function called `text_len()` to find the number of alphabetical
 characters in each word and divide them by the number of words in the body of text. This yields
