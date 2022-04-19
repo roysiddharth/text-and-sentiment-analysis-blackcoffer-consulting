@@ -4,6 +4,19 @@ Text sentiment analysis project I submitted as part of the Interview selection p
 ## Author
 [Siddhartha Roy](https://github.com/roysiddharth)
 
+## Libraries Used
+- `BeautifulSoup4` - creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
+- `requests` - makes HTTP requests simpler and more human-friendly.
+- `pandas` - data manipulation and analysis.
+- `nltk.corpus.stopwords` - library for getting the dictionary of stopwords to filter out from text.
+- `nltk.tokenize.word_tokenize` - divides strings into lists of substrings to get words as tokens.
+- `nltk.tokenize.sent_tokenize` - divides strings into lists of substrings to get sentences as tokens.
+- `nltk.stem.WordNetLemmatizer` - provides stemming and lemmatization functionalities.
+- `re` - support for regular expressions in python
+- `contractions` - support for fixing contractions
+- `textstat.textstat.textstatistics` - support for finding syllables and word counts in Python 3.x
+- `string` - used for importing dictionary of punctuations.
+
 ## Table of Contents
 - [Objective](#objective)
 - [Data Extraction](#data-extraction)
